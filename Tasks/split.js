@@ -1,9 +1,8 @@
 // Split an array into two parts
 
-let splitArray = (splitIndex, array) => {
-  begin = array.slice(0, splitIndex);
-  const len = array.length;
-  array = array.slice(splitIndex, len);
+const splitArray = (splitIndex, array) => {
+  const begin = array.slice(0, splitIndex);
+  array = array.slice(splitIndex, array.length);
   return [begin, array];
 };
 
