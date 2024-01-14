@@ -1,12 +1,12 @@
 // Generate random integer value in given range
-
-Random = (min, max) => {
-  if (max === undefined) {
-    max = min;
-    return Math.floor(Math.random() * (max + 1));
+//Giving to function and variables meaningful names
+generateRandomIntegerInRange = (minimum, maximum) => {
+  if (maximum === undefined) {
+    maximum = minimum;
+    return Math.floor(Math.random() * (maximum + 1));
   } else {
-    return min + Math.floor(Math.random() * (max - min + 1));
+    return minimum + Math.floor(Math.random() * (maximum - minimum + 1));
   }
 };
 
-module.exports = Random;
+module.exports = generateRandomIntegerInRange;
