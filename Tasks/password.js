@@ -5,9 +5,9 @@ const generatePassword = (alphabet, length) => {
   let key = '';
   for (let i = 0; i < length; i++) {
     index = Math.floor(Math.random() * maxLength);
-    key = key + alphabet[index];
+    key += alphabet[index];
   }
   return key;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
