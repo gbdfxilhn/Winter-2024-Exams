@@ -1,6 +1,6 @@
 // Generate random integer value in given range
-//Giving to function and variables meaningful names
-generateRandomIntegerInRange = (minimum, maximum) => {
+//Declaring function as 'const'
+const generateRandomIntegerInRange = (minimum, maximum) => {
   if (maximum === undefined) {
     maximum = minimum;
     return Math.floor(Math.random() * (maximum + 1));
