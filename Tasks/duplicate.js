@@ -1,9 +1,9 @@
 // Return an array without duplicates
-//Giving meaningful names
-arrayWithoutDuplicates = (value, numberOfRepeats) => {
+//Declaring function and array with 'const'
+const arrayWithoutDuplicates = (value, numberOfRepeats) => {
   if (numberOfRepeats <= 0) return [];
   else {
-    result = [];
+    const result = [];
     for (let i = 0; i < numberOfRepeats; i++) {
       result[i] = value;
     }
