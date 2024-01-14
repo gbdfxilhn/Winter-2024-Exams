@@ -1,23 +1,10 @@
 // Get month number
 
-const MONTHS = [
-  'jan',
-  'feb',
-  'mar',
-  'apr',
-  'may',
-  'jun',
-  'jul',
-  'aug',
-  'sep',
-  'oct',
-  'nov',
-  'dec',
-];
+const MONTHS = ['jan' , 'feb' , 'mar' , 'apr' , 'may' , 'jun' , 'jul' , 'aug' , 'sep' , 'oct' , 'nov' , 'dec'];
 
 const monthNumber = (givenMonth) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
+  
+  for (let i = 0; i < MONTH.length; i++) {
     if (givenMonth.toLowerCase().startsWith(MONTH[i])) return i + 1;
   }
   return -1;
